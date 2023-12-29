@@ -1,0 +1,49 @@
+---
+import TiktokIcon from "./icons/TiktokIcon.astro";
+import XIcon from "./icons/XIcon.astro";
+import FacebookIcon from "./icons/FacebookIcon.astro";
+import YoutubeIcon from "./icons/YoutubeIcon.astro";
+import InstagramIcon from "./icons/InstagramIcon.astro";
+
+---
+
+<footer class="w-full bg-blue-900">
+  <nav class="w-full md:w-[1120px] mx-auto">
+    <ul
+      class="flex flex-row gap-x-8 py-12 w-full text-white justify-evenly align-baseline items-center"
+    >
+      <li>
+        <ul class="flex flex-row gap-x-4">
+          <li><a href="https://tiktok.com/@metrodequito" target="_blank" > <TiktokIcon class="size-6"/> </a></li>
+          <li><a href="https://twitter.com/MetrodeQuito" target="_blank" > <XIcon class="size-6"/> </a></li>
+          <li><a href="https://facebook.com/MetrodeQuito" target="_blank" > <FacebookIcon class="size-6"/> </a></li>
+          <li><a href="https://instagram.com/MetroQuito" target="_blank" > <InstagramIcon class="size-6"/> </a></li>
+          <li><a href="https://www.youtube.com/channel/UC5g5V6R_1dWI2Ll7N5lEgeQ" target="_blank" > <YoutubeIcon class="size-6"/> </a></li>
+        </ul>
+      </li>
+      <li>
+        <ul class="flex flex-col gap-y-2">
+          <li class="text-2xl font-semibold">Informacion</li>
+          <li>Antisoborno</li>
+          <li>Transparecia</li>
+          <li>Rendicion de cuentas</li>
+          <li>PAC</li>
+        </ul>
+      </li>
+      <li>
+        <ul class="flex flex-col gap-y-2">
+          <li class="text-2xl font-semibold">Contacto</li>
+          <li>correo:</li>
+         <li>
+          <a href="mailto:comunicacion@metrodequito.gob.ec">comunicacion@metrodequito.gob.ec</a>
+         </li>
+          <li><a href="tel:023827860">Teléfono: 023827860</a></li>
+          <li>Dirección: Calle Montúfar N2-50 y Calle Sucre</li>
+        </ul>
+      </li>
+      <li>
+        <img src="/Cobranding-QR.png" alt="" srcset="">
+      </li>
+    </ul>
+  </nav>
+</footer>

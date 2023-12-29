@@ -1,0 +1,15 @@
+---
+interface Props {
+  stadisticNumber: string;
+  description: string;
+  prefix: string;
+}
+
+const { stadisticNumber, description, prefix } = Astro.props;
+---
+
+<div class="flex flex-col gap-y-4 w-full justify-center items-center">
+  <slot name="icon" class="size-6/12" />
+  <span class="font-bold text-8xl mt-6">{stadisticNumber}</span>
+  <span class="opacity-90">{description}</span>
+</div>

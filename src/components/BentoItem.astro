@@ -1,0 +1,34 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+  link?: string;
+}
+const { title, description, image, link } = Astro.props;
+---
+
+<article
+  class="border-2 rounded hover:border-b-red-600 hover:border-b-4 hover:shadow-md cursor-pointer
+hover:scale-105 transition-all ease-in-out"
+>
+  {
+    image && (
+      <a href={link}>
+        <img src={image} class="size-full roudend" alt="" srcset="" />
+      </a>
+    )
+  }
+  {
+    title && (
+      <h5 class="p-4 text-xl bg-blue-900 font-semibold text-white tracking-tight">
+        {title}
+        {description && (
+          <p class="text-sm mt-4 font-normal text-gray-700 dark:text-gray-400">
+            {description}
+          </p>
+        )}
+      </h5>
+    )
+  }
+</article>

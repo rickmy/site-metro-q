@@ -1,0 +1,28 @@
+---
+import BentoItem from "./BentoItem.astro";
+
+---
+
+<section class="grid grid-cols-3 gap-3 w-full md:w-[1120px] mx-auto my-8 items-stretch">
+  <div class="col-span-3 md:col-span-3">
+    <BentoItem image="/Banner-2.jpg" />
+  </div>
+  <div class="col-span-3 bg-blue-800 text-white text-2xl font-semibold rounded-md py-2 px-4">
+    MetroNoticias
+  </div>
+  <div>
+    <BentoItem image="/Dos-millones-y-medio.jpg" title="Más de dos millones y medio de personas han realizado viajes en el Metro de Quito" description="20 diciembre, 2023"/>
+  </div>
+  <div>
+    <BentoItem image="/Comision-movilidad.jpeg" title="Más de dos millones y medio de personas han realizado viajes en el Metro de Quito" description="20 diciembre, 2023"/>
+  </div>
+  <div>
+    <BentoItem image="/Policia-Metro.jpg" title="Policía especializada brindará seguridad a usuarios del Metro de Quito" description="20 diciembre, 2023"/>
+  </div>
+  <div>
+    <BentoItem image="/banner_pmms.png"/>
+  </div>
+  <div class="col-span-2">
+    <BentoItem image="/banner_web.png"/>
+  </div>
+</section>
